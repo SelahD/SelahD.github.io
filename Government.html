@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+  <style>
+  {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%; 
+  max-width: 500px; 
+}
+/* Make the image responsive */
+.image {
+  display: block;
+  height: 100%; /*Switch to auto & bottom based on image format (portrait vs landscape)*/
+  width: auto /*Switch to 100% & top based on image format (portrait vs landscape)*/
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 128, 128, 0.5); /* Black see-through. Pick color: https://www.hexcolortool.com/ */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%; */Change based on the number of images. (100/#)*/
+  padding: 5px;
+}
+  </style>
+   <title>Alexander Hamilton's Preferred Government</title>
+  <body>
+   <h1 style=font-family:cursive,'lucinda handwriting'>Alexander Hamilton's Preferred Government</h1>
+     <div class='row'>
+     <div class='column'>
+     <div class="container">
+    <img src='https://img.pngio.com/strong-federal-government-clipart-clip-art-images-9351-strong-federal-government-png-2613_2394.png' style=width:600px; height:600px; position:absolute; class='image';></img>
+    <div class='overlay'>Strong Federal Govenment and Executive</div>
+    </div>
+    </div>
+    <div class='column'>
+    <div class='container'>
+    <img src='https://thefederal.com/file/2019/08/federalism-01.jpg' style=width:700px; height:700px; position:relative; class='image';></img>
+    <div class='overlay'>Weaker State Govenments</div>
+    </div>
+    </div>
+    </div>
+     <a href='file:///C:/Users/selah/Downloads/WordlessSummary.html'style="position:absolute; bottom:5px;">The Beliefs and Ideals of Alexander Hamilton</a>
+  </body>
+ </html>

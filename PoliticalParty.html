@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>Alexander Hamilton's Political Party</title>
+  <style>
+{box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%; 
+  max-width: 500px; 
+}
+/* Make the image responsive */
+.image {
+  display: block;
+  width: 100%; /*Switch to auto & bottom based on image format (portrait vs landscape)*/
+  height: auto; /*Switch to 100% & top based on image format (portrait vs landscape)*/
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 128, 128, 0.5); /* Black see-through. Pick color: https://www.hexcolortool.com/ */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white; /* Text Color*/
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%; */Change based on the number of images. (100/#)*/
+  padding: 5px;
+}
+  </style>
+ </head>
+ <body>
+    <h1 style=font-family:cursive,'lucinda handwriting'>Alexander Hamilton's Political Party</h1>
+  <div class='row'>
+  <div class='column'>
+  <div class='container'>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Federalist_Cockade.svg/1200px-Federalist_Cockade.svg.png' style=width:400px; height:400px></img>
+  <div class='overlay'>Started the Federalist Party</div>
+  </div>
+  </div>
+  <div class='column'>
+  <div class='container'>
+    <img src='https://images2.minutemediacdn.com/image/upload/c_crop,h_2169,w_3865,x_0,y_68/v1554745321/shape/mentalfloss/553604-istock-518899548.jpg?itok=bgoFQMCX' style=width:700px; height:700px></img>
+  <div class='overlay'>Supported the Constitution</div>
+  </div>
+  </div>
+  </div>
+   <a href='file:///C:/Users/selah/Downloads/WordlessSummary.html'style="position:absolute; bottom:5px;">The Beliefs and Ideals of Alexander Hamilton</a>
+ </body>
+</html>
